@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>W3 Codes - Free HTML Tamplates and codes</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+          * {
+               margin: 0;
+          }
+          body {
+               font-family: 'poppins', sans-serif;
+          }
+          .navbar-nav {
+               margin-left: auto;
+               margin-right: 20px;
+          }
+          .landing {
+               height: 100vh;
+          }
+          .left {
+               box-shadow: 1px 1px 10px 3px rgb(225, 225, 225);
+               width: 10px;
+               margin-left: 10px;
+               padding-left: 15px;
+               margin-right: 10px;
+               padding-top: 15px;
+               padding-bottom: 20px;
+               border-radius: 8px;
+               transition: all 0.5s ease;
+               overflow: hidden;
+               height: 40px;
+               text-align: center;
+               border: none;
+               z-index: 1;
+               background-color: white;
+          }
+          #logo {
+               border-radius: 50%;
+               width: 35px;
+               height: 35px;
+          }
+          #layer1 {
+               display: flex;
+               height: 50px;
+               text-align: center;
+               justify-content: space-between;
+          }
+          #layer1 a {
+               margin-top: -5px;
+               margin-left: 20px;
+               color: #111;
+               font-size: 15px;
+          }
+          #layer1 button {
+               margin-left: 20px;
+               margin-top: -5px;
+               height: 20px;
+               background: none;
+               color: #111;
+               border: none;
+               font-size: 15px;
+          }
+          #toggler-btn {
+               height: 35px;
+               width: 35px;
+               font-size: 18px;
+               background: none;
+               border: none;
+               box-shadow: 1px 1px 10px 3px rgb(225, 225, 225);
+               color: grey;
+               margin-left: 5px;
+               border-radius: 8px;
+               margin-right: 10px;
+               margin-top: 3px;
+               margin-right: 10px;
+               background-color: white;
+               z-index: 1;
+          }
+          aside {
+               display: flex;
+          }
+          .header {
+               display: flex;
+               justify-content: space-between;
+               margin-left: 5px;
+               margin-right: 5px;
+               margin-top: 5px;
+               box-shadow: 1px 1px 10px 3px rgb(225, 225, 225);
+               border-radius: 8px;
+               height: 60px;
+               z-index: 1;
+               background-color: white;
+          }
+          .header h4 {
+               margin-top: auto;
+               margin-bottom: auto;
+               margin-left: 20px;
+          }
+          .left.active {
+               width: 100%;
+               transition: all 0.5 ease;
+               z-index: 1;
+          }
+          .header a {
+               color: #111;
+               text-decoration: none;
+               margin-top: auto;
+               margin-bottom: auto;
+               margin-right: 15px;
+          }
+          .header button {
+               background: none;
+               border: none;
+               color: #111;
+               margin-right: 15px;
+          }
+          #home {
+               margin-left: auto;
+          }
+          aside {
+               margin-top: 10px;
+          }
+          #home {
+               margin-left: 20px;
+          }
+          #theme {
+               margin-right: 20px;
+          }
+          header {
+               position: fixed;
+               width: 100%;
+               background-color: white;
+               z-index: 1;
+          }
+          #themedBg {
+               max-width: 600px;
+               margin-left: auto;
+               margin-right: auto;
+               background-image: url('https://img.freepik.com/free-vector/digital-technology-background-vector-with-hexagon-border-dark-purple-tone_53876-126069.jpg?size=626&ext=jpg&ga=GA1.2.1043746885.1669217085&semt=sph');
+               color: white;
+               height: 95px;
+               padding-top: 40px;
+               border-radius: 15px;
+               background-size: cover;
+               background-repeat: no-repeat;
+               box-shadow: 1px 1px 20px 3px rgb(183, 183, 183);
+          }
+          #themedBg h4 {
+               font-size: 18px;
+               font-weight: bold;
+               letter-spacing: 1px;
+               text-align: center;
+          }
+          @media only screen and (max-width: 620px) {
+               #themedBg {
+                    margin-left: 10px;
+                    margin-right: 10px;
+               }
+               .header {
+                    height: 70px;
+               }
+               #about {
+                    margin-left: 10px;
+                    margin-right: 10px;
+               }
+          }
+          @media only screen and (min-width: 850px) {
+               .row-1 {
+                    display: flex;
+               }
+          }
+          #header-line {
+               margin-top: 50px;
+               margin-bottom: 20px;
+          }
+          .card {
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 80px;
+          }
+          .row-1 {
+               justify-content: space-between;
+          }
+          #about {
+               max-width: 600px;
+               margin-left: auto;
+               margin-right: auto;
+               border-radius: 18px;
+               height: max-content;
+               text-align: center;
+               padding-top: 20px;
+               padding-bottom: 20px;
+               font-size: 1rem;
+               box-shadow: 0px 0px 30px 3px rgb(225, 225, 225); 
+          }
+          #about p {
+               letter-spacing: 1px;
+               color: grey;
+               font-size: 12px;
+          }
+          #about a {
+               text-decoration: none;
+          }
+          #about a {
+               color: blue;
+          }
+          .card {
+               z-index: 0;
+          }
+          .landing-screen {
+               height: 10vh;
+               width: 50%;
+          }
+          header {
+               padding-bottom: 10px;
+          }
+          #form h3 {
+               text-align: center;
+          }
+          footer {
+               background-color: #111;
+          }
+          footer .logo {
+               color: white;
+          }
+          .img {
+               height: 100vh;
+               width: 100%;
+          }
+          .img img {
+               margin-top: 40vh;
+               width: 300px;
+          }
+          @media only screen and (min-width: 630px) {
+               .landing-screen {
+                    height: 100vh;
+               }
+               .main {
+                    display: flex;
+               }
+          }
+          @media only screen and (min-width: 630px) {
+               .img img {
+                    float: right;
+                    margin-right: 60px;
+               }
+          }
+          @media only screen and (max-width: 629px) {
+               .landing-screen {
+                    height: 5vh;
+               }
+               .img {
+                    display: none;
+               }
+               #themedBg {
+                    margin-top: 100px;
+               }
+          }
+     </style>
+</head>
+<body>
+               <header>
+                    <div class="header">
+                         <h4>W3 Codes</h4>
+                    </div>
+                    <div class="content">
+                         <aside>
+                              <div class="left">
+                                   <div id="layer1">
+                                        <a id="home" href="https://sreehari-san.github.io/SS" style="text-decoration: none;">Home</a>
+                                        <a>About</a>
+                                        <button id="theme">Theme</button>
+                                   </div>
+                              </div>
+                              <button id="toggler-btn"><i class="fa-solid fa-bars"></i></button>
+                         </aside>
+                    </div>
+               </header>
+          </div>
+          <br><br><br><br><br><br><br>
+          <div id="themedBg">
+               <h4>New Tamplates Soon</h4>
+          </div>
+          <br>
+          <br>
+          <div class="container">
+               <div id="about">
+                    <h4>About W3 Codes</h4>
+                    <br>
+                    <p>W3 Codes is a code tamplate website
+                         <br>made by Sreehari Santhosh <a href="https://sreehari-san.github.io/SS">Contact Me</a>.
+                         <br>
+                         <b>Tamplates are not contributed</b>
+                    </p>
+               </div>
+          </div>
+          <br><hr><br>
+          <div class="content">
+               <h3 style="text-align: center;">Codes</h3>
+               <div class="row-1">
+                    <div class="card" style="width: 18rem; border-radius: 25px; height: 330px; text-align: center; border: none; box-shadow: 1px 1px 15px 2px rgb(225, 225, 225);" id="card-1">
+                         <br>
+                         <img style="width: 150px; margin-left: auto;margin-right: auto;" class="card-img-top" src="undraw_my_code_snippets_re_4adu.svg" alt="Card image cap">
+                         <div class="card-body">
+                           <h6 class="card-title">Beginner Snippet</h6>
+                           <p class="card-text" style="font-size: 15px; color: grey; margin-top: 30px;">HTML Snippet</p>
+                           <a href="#" class="btn btn-primary">Get Snippet</a>
+                         </div>
+                    </div>
+                    <div class="card" style="width: 18rem; border-radius: 25px; height: 330px; text-align: center; border: none; box-shadow: 1px 1px 15px 2px rgb(225, 225, 225);" id="card-2">
+                         <br>
+                         <img style="width: 150px; margin-left: auto;margin-right: auto;" class="card-img-top" src="https://cdn.pixabay.com/photo/2019/09/22/16/20/backend-4496461__340.png" alt="Card image cap">
+                         <div class="card-body">
+                           <h6 class="card-title">User Log In</h6>
+                           <p class="card-text" style="font-size: 15px; color: grey; margin-top: 30px;">Colorful User Log In</p>
+                           <a href="https://github.com/Sreehari-san/log-in-form/blob/main/index.html" class="btn btn-primary">Get Source Code</a>
+                         </div>
+                    </div>
+                    <div class="card" style="width: 18rem; border-radius: 25px; height: 330px; text-align: center; border: none; box-shadow: 1px 1px 15px 2px rgb(225, 225, 225);" id="card-3">
+                         <img style="width: 150px; margin-left: auto;margin-right: auto;" class="card-img-top" src="https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630__340.png" alt="Card image cap">
+                         <div class="card-body">
+                           <h6 class="card-title">Premium header</h6>
+                           <p class="card-text" style="font-size: 15px; color: grey; margin-top: 30px;">Modern header</p>
+                           <a href="#" class="btn btn-disabled btn-secondary">Coming soon</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <br><hr><br><br>
+          <div class="container">
+               <section id="form">
+                    <h3>Contact Me</h3>
+                    <br><br>
+                    <div class="container-form">
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd9UsUWaOAkzSAzedw767QPc7BXbI02WEqWPrJHney4BXgyug/formResponse">
+                         <div class="form-group">
+                         <label for="exampleInputName">Name</label>
+                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name" style="font-size: 13px; height: 40px;" required name="entry.59728489">
+                         </div>
+                         <br>
+                         <div class="form-group">
+                         <label for="exampleInputPassword1">Last name</label>
+                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last name" style="font-size: 13px; height: 40px;" required name="entry.357550890">
+                         </div>
+                         <br>
+                         <div class="form-group">
+                              <label for="exampleInputPassword1">How can I connect you</label>
+                              <input type="text" class="form-control" id="exampleInputOther" placeholder="Any Connecting source" style="font-size: 13px; height: 40px;" required name="entry.160370903">
+                         </div>
+                         <br>
+                         <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Your Message</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="outline: none;" required name="entry.2033087730"></textarea>
+                         </div>
+                         <br>
+                         <button onclick="contactMe()" type="submit" class="btn btn-primary" style="margin-top: 15px;">Submit</button>
+                    </form>
+                    </div>
+               </section>
+          </div>
+          <br>
+          <footer>
+               <br>
+               <div class="footer">
+                    <h6 style="text-align: center; color: white;">Web design by Sreehari Santhosh</h6>
+               </div>
+               <br>
+          </footer>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+     <script>
+       AOS.init();
+
+       let btn = document.getElementById("toggler-btn");
+       let sidebar = document.querySelector(".left")
+
+       btn.onclick = function() {
+          sidebar.classList.toggle("active")
+       }
+     </script>
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
